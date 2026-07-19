@@ -1,4 +1,4 @@
-name: astrbot_plugin_zhouli
+name: astrbot_plugin_hehu_zhouli
 display_name: 合乎周礼
 desc: 将现代中文改写成“合乎周礼”的白话翻译腔；AstrBot 适配版，核心风格来源于 Aspirin0000/zhouli-translator。
 short_desc: /zhouli 一句话，立刻问礼。
