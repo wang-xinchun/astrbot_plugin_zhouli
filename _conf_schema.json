@@ -1,0 +1,66 @@
+{
+  "provider_type": {
+    "description": "模型接口类型",
+    "type": "string",
+    "options": ["openai_compatible", "anthropic"],
+    "default": "openai_compatible",
+    "hint": "OpenAI-compatible 兼容 DeepSeek、硅基流动、OpenRouter 等 Chat Completions 风格接口；Anthropic 使用 Claude Messages API。"
+  },
+  "api_key": {
+    "description": "API Key",
+    "type": "string",
+    "default": "",
+    "hint": "只保存在 AstrBot 插件配置中，不要填写到代码或 README。"
+  },
+  "base_url": {
+    "description": "Base URL",
+    "type": "string",
+    "default": "",
+    "hint": "OpenAI-compatible 示例格式：https://api.example.com/v1；Anthropic 示例格式：https://api.anthropic.com。"
+  },
+  "model": {
+    "description": "模型名称",
+    "type": "string",
+    "default": "",
+    "hint": "填写服务商提供的模型 ID。"
+  },
+  "default_mode": {
+    "description": "默认辞气",
+    "type": "string",
+    "options": ["gentle", "debate", "defend", "lament"],
+    "default": "gentle",
+    "hint": "gentle=温言相劝，debate=大儒辩经，defend=强行圆场，lament=痛心疾首。"
+  },
+  "default_level": {
+    "description": "默认篇幅",
+    "type": "string",
+    "options": ["light", "standard", "grand"],
+    "default": "standard",
+    "hint": "light=小礼，standard=成礼，grand=大礼。"
+  },
+  "temperature": {
+    "description": "Temperature",
+    "type": "float",
+    "default": 0.9,
+    "hint": "控制输出随机性。"
+  },
+  "max_tokens": {
+    "description": "Max tokens",
+    "type": "int",
+    "default": 720,
+    "hint": "模型最大输出 token 数。"
+  },
+  "timeout_seconds": {
+    "description": "请求超时时间",
+    "type": "int",
+    "default": 45,
+    "hint": "单位：秒。"
+  },
+  "max_input_chars": {
+    "description": "最大输入字数",
+    "type": "int",
+    "default": 300,
+    "hint": "默认沿用原项目的 300 字限制。"
+  }
+}
+
